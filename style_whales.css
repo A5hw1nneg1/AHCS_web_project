@@ -1,0 +1,412 @@
+*{
+  font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+.text{
+font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  margin-top: 25px;
+}
+.header_logo{
+    height: 65px;
+    width: 65px;
+    position: relative;
+    right: 90px;
+    top: 2px;
+}
+.header_name{
+  height: 79px;
+    width: 230px;
+    position: relative;
+    right: 200px;
+    top: -13px;
+}
+.home_header{
+    background-color: #76b6cf;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100vw;
+    position: fixed;
+}
+.scroll_header{
+    box-shadow: 5px 2px 18px black;
+    opacity: 0;
+    height: 10vh;
+    z-index: 3;
+}
+.scroll_header:hover{
+  opacity: 0.9;
+}
+.home_header p{
+    font-size: large;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.scroll{
+    height: 100vh;
+   width: 100vw;
+}
+.parallax {
+  /* The image used */
+  background-image: url("https://source.unsplash.com/random/1500×765/?bluewhale/?whales");
+
+  /* Set a specific height */
+  min-height: 750px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#typing-text{
+    font-family: 'Raleway', sans-serif;
+    color: #013374;
+    background-color: #76b6cf;
+    opacity: 0.9;
+    border-radius: 8px;
+    width: 80vw;
+    height: 15vh;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 250px;
+    left: 175px;
+    box-shadow: 0px 0px 4px 4px #76b6cf;
+    font-weight: bold;
+}
+.content_box{
+    background-color: #013374;
+    display: flex;
+    flex-direction: row;
+    margin: 25px;
+    padding: 10px;
+    border: solid transparent 2px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 4px 2px #013374;
+}
+.content_box:hover{
+    box-shadow: 0px 0px 6px 5px #013374;
+}
+.content{
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    height: 600px;
+    border: solid transparent 2px;
+    border-radius: 8px;
+    color:#013374;
+    margin: auto;
+    background-color: #76b6cf;
+    padding: 40px;
+}
+.content h2{
+    font-weight: bolder;
+    text-align: center;
+
+}
+.content p{
+  padding: 25px;
+  text-align: justify;
+  font-size: 20px;
+}
+.image{
+    margin: 10px;
+    height: 600px;
+    width: 800px;
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color:#015376;
+  color: white;
+  padding: 10px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 12%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 75%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: none; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: white;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid white;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(0.8)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+footer{
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: space-between;
+  padding:15px;
+}
+.contact{
+  justify-self: center;
+  width: fit-content;
+  height: fit-content;
+}
+@keyframes fazein{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+@keyframes fazeout{
+  from{
+    opacity: 1;
+  }
+  to{
+    opacity: 0;
+  }
+}
+.fazein{
+  animation: fazein 2s linear 0s 1 normal both;
+}
+.fazeout{
+  animation: fazeout 1s linear 0s 1 normal both;
+}
+.testimonial{
+  width: 25%;
+  margin: 50px 16px 10px ;
+  padding: 5px;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 69vh;
+}
+
+.tb{
+  overflow: scroll;
+  display: flex;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+.tb::-webkit-scrollbar{
+  display: none;
+}
+.tb h2{
+  position: absolute;
+  color:#000000;
+}
+#laurels{
+  height: auto;
+  width: 80vw;
+  margin: auto;
+}
+.laurelbox{
+   width: 82vw;
+    margin: auto;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+.navbarbtn{
+  text-decoration: none;
+  color: #005275;
+  font-size: 20px;
+  font-weight: bold;
+}
+.navbarbtn:hover{
+  text-decoration: underline;
+  color: #005275;
+  text-underline-offset: 12px;
+}
+#productimage{
+  height: 90vh;
+  width: auto;
+  margin-left: 180px;
+}
+#headproduct{
+  position: relative;
+  font-size: -webkit-xxx-large;
+  margin: 0px;
+  top: -320px;
+}
+#scrollbtn{
+  position: absolute;
+  top: 606vh;
+  left: 95vw;
+}
+#scrollbtnopp{
+  position: absolute;
+  top: 606vh;
+  left: 2vw;
+}
+#scrollbtn:hover{
+  opacity: 0.8;
+  cursor: pointer;
+}
+#scrollbtnopp:hover{
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.circle {
+       box-shadow: 0px 0px 12px 5px #015376;
+       margin-right: 45px;
+/*   background: #32557f; */
+  margin-top: 50px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%; 
+  overflow: hidden;
+}
+.fish{
+    background-image: url(bluewhale.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.turtle{
+     background-image: url(finwhale.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.whale{
+     background-image: url(killerwhale.png);
+     background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.coral{
+     background-image: url(spermwhale.png);
+      background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.circle:hover{
+     cursor: pointer;
+    scale:1.05;
+    opacity: 1;
+    box-shadow: 0px 0px 4px 2px #015376;
+}
+.circle:hover>span,.circle:focus>span{
+    visibility: visible;
+}
+.circle span{
+    font-size: 22px;
+    position: relative;
+    top: 85px;
+    left: 10px;
+    background: #76b6cf;
+    padding: 3px;
+    border-radius: 5px;
+    opacity: 0.8;
+    visibility: hidden;
+}
+

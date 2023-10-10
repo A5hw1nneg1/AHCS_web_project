@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;600&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Welcome to AHCS - A society for Aquatic Preservation</title>
+    <link rel="icon" type="image/x-icon" href="website_logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://otpless.com/auth.js"></script>
+</head>
+
+<body>
+    <header class="home_header" id="header">
+        <img src="page_logo.png" class="header_logo"></img>
+        <img src="full_logo.png" class="header_name"></img>
+        <a href="#" class="navbarbtn">Home</a>
+        <p id="product" class="navbarbtn" onclick = "document.documentElement.scrollTo(0,1400)">Find a speices</p>
+        <p id="about" class="navbarbtn">About Us</p>
+        <button style="width:auto;" onclick=" document.documentElement.scrollTo(0,750)">Sign Up</button>
+    </header>
+    <main>
+        <div class="scroll parallax">
+            <div id="typing-text"></div>
+            <img src="scoll_down.png" id="scrolldown" height="50" width="50" style="background: transparent;
+    position: relative;
+    top: 72vh;
+    left: 50vw;
+            cursor: pointer;"><img></img>
+        </div>
+        <div class="content fazein">
+            <div style="width: 35vw;">
+                <h2>About Us</h2>
+                <p style="font-weight: bold;">Welcome to our Aquatic Habitat Conservation Society, where we are
+                    dedicated to protecting and
+                    preserving the delicate
+                    ecosystems
+                    of our oceans, lakes, and rivers. Our mission is to ensure that these environments remain healthy
+                    and thriving for generations
+                    to come.
+                    As an organization, we understand the critical role that aquatic life plays in our planet's overall
+                    health and well-being. From
+                    providing food and livelihoods to regulating our climate and supporting biodiversity, these
+                    ecosystems are truly essential to
+                    our survival.
+                </p>
+            </div>
+
+            <div style="background-color: white; height: 20vh; border-radius: 8px;">
+
+                <style>
+                    form {
+                        padding: 10px 15px 10px 15px;
+
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        margin-top: 10px;
+                        background-color: white;
+                        border-radius: 8px;
+                    }
+
+                    label {
+                        font-size: 18px;
+                        margin-top: 20px;
+                        background-color: white;
+                    }
+
+                    input[type="text"],
+                    input[type="email"],
+                    input[type="password"] {
+                        width: 300px;
+                        height: 30px;
+                        margin-top: 10px;
+                        font-size: 16px;
+                        padding: 5px;
+                        background-color: white;
+                    }
+
+                    input[type="submit"] {
+                        background-color: #4CAF50;
+                        color: white;
+                        border: none;
+                        width: 150px;
+                        height: 40px;
+                        margin-top: 20px;
+                        font-size: 18px;
+                        cursor: pointer;
+                    }
+
+                    input[type="submit"]:hover {
+                        background-color: #3E8E41;
+                    }
+
+                    .error {
+                        color: red;
+                        font-size: 14px;
+                        margin-top: 10px;
+                    }
+                </style>
+                <form onsubmit="return validateForm()">
+                    <h2 style="background-color: white; border-radius: 8px;">Sign Up</h2>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                    <input type="submit" value="Sign Up">
+                    <div id="error-message"></div>
+                </form>
+                <script>
+                    function validateForm() {
+                        var name = document.getElementById("name").value;
+                        var email = document.getElementById("email").value;
+                        var password = document.getElementById("password").value;
+                        var confirmPassword = document.getElementById("confirm-password").value;
+                        var errorMessage = document.getElementById("error-message");
+                        if (password !== confirmPassword) {
+                            errorMessage.innerHTML = "Passwords do not match.";
+                            return false;
+                        } else {
+                            errorMessage.innerHTML = "";
+                            alert("Welcome, " + name + "!");
+                            return true;
+                        }
+                    }
+                </script>
+            </div>
+        </div>
+<div id="otpless-login-page">
+<script type="text/javascript" src="https://otpless.com/auth.js"  ></script>
+        <div class="scroll parallax">
+            <div id="typing-text" style="height: 40vh;
+    display: flex;
+    justify-content: space-around;">
+                <h2 style="    position: absolute;
+    top: 10px;
+    font-weight: bolder;">Find Species</h2>
+                <br>
+                <div class="circle fish" onclick="location.replace('info_page_fishes.html')"><span>Fish and
+                        Sharks</span></div>
+                <div class="circle turtle" onclick="location.replace('info_page_turtles.html')"><span style="left: 30px;">Sea Turtles</span></div>
+                <div class="circle whale" onclick="location.replace('info_page_whales.html')"><span style="left: 53px;">Whales</span></div>
+                <div class="circle coral" onclick="location.replace('info_page_coral.html')"><span style="left: 65px;">Coral</span></div>
+
+            </div>
+        </div>
+    </main>
+</body>
+<footer style="background-color:#76B6CF;">
+    
+      <div class="contact">
+        <h2>Contact Us</h2>
+        Email: AHCS@gmail.com<br>
+        Phone: +91 1234567891<br>
+        Location: The Oceans<br>
+        <a href="#" target="_blank"><img src="twitter.png" height="50"
+                width="50"><img></a>
+        <a href="#" target="_blank"><img src="linked.PNG"
+                height="50" width="50"><img></a>
+    </div>
+    <h5 style="    position: relative;
+    right: 40vw;color: darkblue;
+        top:15px;">Made with &#10084; by team Error_404</h5>
+</footer>
+     <script>
+      function otpless(otplessUser) {
+        alert(JSON.stringify(otplessUser));
+      }
+    </script>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+
+</html>

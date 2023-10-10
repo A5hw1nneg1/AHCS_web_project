@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;600&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style_whales.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Whales | AHCS</title>
+    <link rel="icon" type="image/x-icon" href="website_logo.png">
+</head>
+
+<body>
+    <header class="home_header" id="header">
+        <img src="page_logo.png" class="header_logo"></img>
+        <img src="full_logo.png" class="header_name"></img>
+        <a href="index.html" class="navbarbtn">Home</a>
+        <p id="product" class="navbarbtn" onclick = "document.documentElement.scrollTo(0,1400)">Find a speices</p>
+        <p id="about" class="navbarbtn">Overview</p>
+        <button style="width:auto;" onclick=" document.documentElement.scrollTo(0,750)">Sign Up</button>
+    </header>
+    <main>
+        <div class="scroll parallax">
+            <div id="typing-text"></div>
+            <img src="scoll_down.png" id="scrolldown" height="50" width="50" style="background: transparent;
+    position: relative;
+    top: 72vh;
+    left: 50vw;
+            cursor: pointer;"><img></img>
+        </div>
+        <div class="content fazein">
+            <div style="width: 35vw;">
+                <h2>Overview</h2>
+                <p style="font-weight: bold;">Whales are among the largest and oldest animals on Earth. They can be
+                    found in every ocean and range in size from the small dwarf sperm whale to the massive blue whale,
+                    the largest animal on the planet. Whales belong to a group of marine mammals called cetaceans.
+                    Marine mammals in the cetacean family include whales, dolphins, and porpoises.There are two types of
+                    cetaceans: baleen and toothed. Baleen whales, or Mysticetes, have baleen
+                    plates which sieve prey, like krill, from the water. Toothed whales, or Odontocetes, have teeth and
+                    feed on fish, squid, and other marine mammals such as seals and sea lions.
+
+                </p>
+            </div>
+            <div>
+                <img src="https://source.unsplash.com/random/250×250/?shark/?whale" style="height: 500px; width: 500px;">
+            </div>
+        </div>
+        <div class="scroll parallax">
+            <div id="typing-text" style="height: 40vh;
+    display: flex;
+    justify-content: space-around;">
+                <h2 style="    position: absolute;
+    top: 10px;
+    font-weight: bolder;">Whales</h2>
+                <br>
+                <div class="circle fish"
+                    onclick="location.replace('https://www.fisheries.noaa.gov/species/blue-whale')"><span style="left: 38px;">Blue Whale</span></div>
+                <div class="circle turtle"
+                    onclick="location.replace('https://www.fisheries.noaa.gov/species/fin-whale')"><span
+                        style="left: 45px;">Fin Whale</span></div>
+                <div class="circle whale"
+                    onclick="location.replace('https://www.fisheries.noaa.gov/species/killer-whale')"><span
+                        style="left: 32px;">Killer Whale</span></div>
+                <div class="circle coral"
+                    onclick="location.replace('https://www.fisheries.noaa.gov/species/sperm-whale')"><span
+                        style="left: 37px;">Sperm Whale</span></div>
+
+            </div>
+        </div>
+</body>
+<!-- <script src="script.js"></script> -->
+<script src="infopage_whales.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+
+</html>
